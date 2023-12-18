@@ -37,6 +37,8 @@ public class LoginController {
 		
 	}
 	
+	//ss1
+	
 	@RequestMapping(value="login",method=RequestMethod.POST)
 	public String goToWelcomePage(@RequestParam(name = "name", defaultValue = "DefaultName") String name, @RequestParam(name = "password", defaultValue = "DefaultName") String password, ModelMap model) {
 		model.put("name",name);
