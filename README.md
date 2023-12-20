@@ -6,3 +6,10 @@ JSTL(JSP Standard Tag Library) is a collection of custom tags that provide commo
 
 In Java, JSP stands for Java Server Pages. It is a server-side technology which is used for creating web applications. It is used to create dynamic web content. JSP consists of both HTML tags and JSP tags. In this, JSP tags are used to insert JAVA code into HTML pages. It is an advanced version of Servlet Technology i.e. a web-based technology that helps us to create dynamic and platform-independent web pages. In this, Java code can be inserted in HTML/ XML pages or both. JSP is first converted into a servlet by the JSP container before processing the client’s request. JSP has various features like JSP Expressions, JSP tags, JSP Expression Language, etc.
 
+Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.
+
+CSS is the language we use to style an HTML document.
+
+CSS describes how HTML elements should be displayed.
+
+After, changes made in pom.xml, always restart the server,Hence, Jar file get reloaded
