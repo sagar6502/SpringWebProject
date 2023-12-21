@@ -13,3 +13,5 @@ CSS is the language we use to style an HTML document.
 CSS describes how HTML elements should be displayed.
 
 After, changes made in pom.xml, always restart the server,Hence, Jar file get reloaded
+
+https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/view.html

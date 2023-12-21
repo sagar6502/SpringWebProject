@@ -2,12 +2,16 @@ package com.myfirstwebproject.project1.todo;
 
 import java.time.LocalDate;
 
+import jakarta.validation.constraints.Size;
+
 //Store in Database(MySQL)
 //Static List of todos => Database(H2, MySQL)
 
 public class Todo {
 	private int id;
 	private String username;
+	
+	@Size(min=10, message="Enter at least 10 characters") //display message if validation fails
 	private String description;
 	private LocalDate targetDate;
 	private boolean done;

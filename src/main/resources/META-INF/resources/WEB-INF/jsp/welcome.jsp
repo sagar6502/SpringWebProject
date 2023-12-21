@@ -9,7 +9,7 @@
 			<h1>Welcome</h1>
 			<hr>
 			<div>Dear : ${name}</div>
-			<div><a href="list-todos"> Manage</a> Your Dodos</div>
+			<div><a href="list-todos"> Manage</a> Your Todos</div>
 		</div>
 		<script src="webjars/bootstrap/5.3.2/js/bootstrap.min.js"></script>
 		<script src="webjars/jquery/3.7.1/jquery.min.js"></script>
