@@ -1,8 +1,9 @@
-package com.myfirstwebproject.project1.todo;
+	package com.myfirstwebproject.project1.todo;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 import org.springframework.stereotype.Service;
 
@@ -27,5 +28,13 @@ public class ToDoService {
 	public void addTodo(String username, String description, LocalDate targetDate, boolean isItDone){
 		Todo todo = new Todo(++todosCount, username, description, targetDate, isItDone);
 		todos.add(todo);
+	}
+	
+	public void deleteById(int id){
+		//todo -> todo.getId() == id
+		Predicate<? super Todo> predicate 
+		= todo -> todo.getId() == id;
+		
+		todos.removeIf(predicate);
 	}
 }
