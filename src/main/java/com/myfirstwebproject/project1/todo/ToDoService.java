@@ -7,6 +7,8 @@ import java.util.function.Predicate;
 
 import org.springframework.stereotype.Service;
 
+import jakarta.validation.Valid;
+
 @Service
 public class ToDoService {
 	
@@ -21,6 +23,11 @@ public class ToDoService {
 		todos.add(new Todo(++todosCount,"inSagar","Learn CI",LocalDate.now().plusYears(4), false));
 	}
 
+	/**
+	 * Finds the details of the course using userName
+	 * @param username
+	 * @return list of userName
+	 */
 	public List<Todo> findByUsername(String username){
 		return todos;
 	}
@@ -36,5 +43,18 @@ public class ToDoService {
 		= todo -> todo.getId() == id;
 		
 		todos.removeIf(predicate);
+	}
+	
+	public void updateById(@Valid Todo todo){
+		//todo -> todo.getId() == id
+		deleteById(todo.getId());
+		todos.add(todo);
+	}
+	
+	public Todo findById(int id){
+		Predicate<? super Todo> predicate 
+		= todo -> todo.getId() == id;
+		Todo todo = todos.stream().filter(predicate).findFirst().get();
+		return todo;
 	}
 }
