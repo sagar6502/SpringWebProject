@@ -52,7 +52,7 @@ public class ToDoController {
 				return "todo.jsp";
 			}
 			
-			todoService.addTodo((String)model.get("name"), todo.getDescription(), LocalDate.now().plusYears(1), false);
+			todoService.addTodo((String)model.get("name"), todo.getDescription(), todo.getTargetDate(), false);
 			return "redirect:list-todos";
 		}
 		
