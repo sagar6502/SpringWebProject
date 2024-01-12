@@ -15,3 +15,29 @@ CSS describes how HTML elements should be displayed.
 After, changes made in pom.xml, always restart the server,Hence, Jar file get reloaded
 
 https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/view.html
+
+Spring Security is a powerful and customizable authentication and access control framework for Java applications, particularly those built using the Spring Framework. It provides comprehensive security services for Java EE-based enterprise software applications.
+
+Key features of Spring Security include:
+
+Authentication and Authorization: Spring Security provides robust mechanisms for authentication (verifying the identity of a user) and authorization (determining what actions a user is allowed to perform).
+
+Declarative Security: You can express security constraints in a declarative way using annotations or XML configuration, making it easier to define and manage security rules.
+
+Integration with Spring Framework: Spring Security integrates seamlessly with the broader Spring ecosystem. It can be easily integrated into Spring-based applications, such as those built with Spring MVC, Spring Boot, and other Spring projects.
+
+Customization: Spring Security is highly customizable, allowing developers to tailor security configurations to specific application requirements. You can plug in custom authentication providers, access decision strategies, and more.
+
+Support for Multiple Authentication Providers: Spring Security supports a wide range of authentication providers, including username/password, LDAP, OAuth, OpenID, and more.
+
+Session Management: It provides session management features, allowing you to control how sessions are created, invalidated, or tracked.
+
+Remember-Me Authentication: Spring Security supports "Remember-Me" authentication, allowing users to be remembered between sessions without having to log in every time.
+
+Security Filters: The framework uses a series of filters to intercept requests and perform security-related operations, allowing you to customize the security processing chain.
+
+CSRF Protection: Spring Security includes built-in protection against Cross-Site Request Forgery (CSRF) attacks.
+
+Integration with External Authentication Providers: You can integrate Spring Security with external authentication providers, such as LDAP, OAuth, and others.
+
+To use Spring Security in your project, you typically add the relevant dependencies to your build configuration (e.g., Maven or Gradle) and configure security settings in your application. It's a versatile framework that can be adapted to various security requirements, making it popular in enterprise Java development.
