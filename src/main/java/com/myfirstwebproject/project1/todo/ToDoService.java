@@ -17,10 +17,10 @@ public class ToDoService {
 	private static int todosCount = 0;
 	
 	static {
-		todos.add(new Todo(++todosCount,"inSagar","Learn AWS",LocalDate.now().plusYears(1), false));
-		todos.add(new Todo(++todosCount,"inSagar","Learn DevOps",LocalDate.now().plusYears(2), false));
-		todos.add(new Todo(++todosCount,"inSagar","Learn Git",LocalDate.now().plusYears(3), false));
-		todos.add(new Todo(++todosCount,"inSagar","Learn CI",LocalDate.now().plusYears(4), false));
+		todos.add(new Todo(++todosCount,"inSagar","Learn AWS 1",LocalDate.now().plusYears(1), false));
+		todos.add(new Todo(++todosCount,"inSagar","Learn DevOps 1",LocalDate.now().plusYears(2), false));
+		todos.add(new Todo(++todosCount,"inSagar","Learn Git 1",LocalDate.now().plusYears(3), false));
+		todos.add(new Todo(++todosCount,"inSagar","Learn CI 1",LocalDate.now().plusYears(4), false));
 	}
 
 	/**

@@ -11,10 +11,10 @@
 				<th>Is Done?</th>
 				<th>Delete Data</th>
 				<th>Update Data</th>
-				<tr>
+				
 			</thead>
 			<tbody>
-				<c:forEach items="${todos}" var="todo">
+				<c:forEach items="${todo}" var="todo">
 					<tr>
 						<td>${todo.description}</td>
 						<td>${todo.targetDate}</td>

@@ -2,12 +2,19 @@ package com.myfirstwebproject.project1.todo;
 
 import java.time.LocalDate;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import jakarta.validation.constraints.Size;
 
 //Store in Database(MySQL)
 //Static List of todos => Database(H2, MySQL)
-
+@Entity
 public class Todo {
+	
+	public Todo() {
+		
+	}
 	private int id;
 	private String username;
 	
@@ -25,6 +32,8 @@ public class Todo {
 		this.done = done;
 	}
 
+	@Id
+	@GeneratedValue
 	public int getId() {
 		return id;
 	}

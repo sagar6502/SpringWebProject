@@ -25,7 +25,7 @@ public class SpringSecurityConfiguration {
 		/*
 		 * It appears that you've declared a variable passwordEncoder of type Function<String, String>. This means that passwordEncoder is a functional interface in Java that represents a function that takes a String as input and produces another String as output.
 		 */
-		UserDetails userDetails = createNewUser("sagarsunar", "Celeritas@13");
+		UserDetails userDetails = createNewUser("sagar", "sunar");
 		UserDetails userDetails1 = createNewUser("prahladsaurag", "Lur@4321");
 		//UserDetails userDetails = User.withDefaultPasswordEncoder().username("sagarsunar").password("Celeritas@13").roles("USER","ADMIN").build();
 		return new InMemoryUserDetailsManager(userDetails, userDetails1);

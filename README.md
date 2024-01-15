@@ -49,3 +49,10 @@ In spring security, All URLs are protected
 A login form is shown for unauthorized requests
 CSRF disable
 Frames - Spring does not allow frames
+
+Implement Docker :
+download docker from "install docker" web page from docker
+
+check version of docker using : "docker --version"
+Use system administer to run docker[prefer powershell]
+docker run --detach --env MYSQL_ROOT_PASSWORD=dummypassword --env MYSQL_USER=todos-user --env MYSQL_PASSWORD=dummytodos --env MYSQL_DATABASE=todos --name mysql --publish 3306:3306 mysql:8-oracle
