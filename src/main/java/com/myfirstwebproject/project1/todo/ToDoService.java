@@ -29,7 +29,10 @@ public class ToDoService {
 	 * @return list of userName
 	 */
 	public List<Todo> findByUsername(String username){
-		return todos;
+		Predicate<? super Todo> predicate 
+		= todo -> todo.getUsername().equalsIgnoreCase(username);
+		
+		return todos.stream().filter(predicate).toList();
 	}
 	
 	public void addTodo(String username, String description, LocalDate targetDate, boolean isItDone){
@@ -57,4 +60,5 @@ public class ToDoService {
 		Todo todo = todos.stream().filter(predicate).findFirst().get();
 		return todo;
 	}
+
 }

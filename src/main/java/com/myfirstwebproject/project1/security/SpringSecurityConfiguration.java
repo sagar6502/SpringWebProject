@@ -17,18 +17,24 @@ public class SpringSecurityConfiguration {
 	
 	//InMemoryUserDetailsManager(UserDetails... users)
 	
-	@SuppressWarnings("deprecation")
 	@Bean
 	public InMemoryUserDetailsManager createUserDetailsManager() {
 		/*
 		 * It appears that you've declared a variable passwordEncoder of type Function<String, String>. This means that passwordEncoder is a functional interface in Java that represents a function that takes a String as input and produces another String as output.
 		 */
+		UserDetails userDetails = createNewUser("sagarsunar", "Celeritas@13");
+		UserDetails userDetails1 = createNewUser("prahladsaurag", "Lur@4321");
+		//UserDetails userDetails = User.withDefaultPasswordEncoder().username("sagarsunar").password("Celeritas@13").roles("USER","ADMIN").build();
+		return new InMemoryUserDetailsManager(userDetails, userDetails1);
+	}
+
+	private UserDetails createNewUser(String username, String password) {
 		Function<String, String> passwordEncoder = input -> {
 			return passwordEncoder().encode(input);
 		};
-		UserDetails userDetails = User.builder().passwordEncoder(passwordEncoder).username("sagarsunar").password("Celeritas@13").roles("USER","ADMIN").build();
-		//UserDetails userDetails = User.withDefaultPasswordEncoder().username("sagarsunar").password("Celeritas@13").roles("USER","ADMIN").build();
-		return new InMemoryUserDetailsManager(userDetails);
+		UserDetails userDetails = User.builder().passwordEncoder(passwordEncoder).username(username)
+				.password(password).roles("USER","ADMIN").build();
+		return userDetails;
 	}
 	
 	@Bean
