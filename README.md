@@ -41,3 +41,11 @@ CSRF Protection: Spring Security includes built-in protection against Cross-Site
 Integration with External Authentication Providers: You can integrate Spring Security with external authentication providers, such as LDAP, OAuth, and others.
 
 To use Spring Security in your project, you typically add the relevant dependencies to your build configuration (e.g., Maven or Gradle) and configure security settings in your application. It's a versatile framework that can be adapted to various security requirements, making it popular in enterprise Java development.
+
+
+Cross-site request forgery, also known as one-click attack or session riding and abbreviated as CSRF or XSRF, is a type of malicious exploit of a website or web application where unauthorized commands are submitted from a user that the web application trusts.
+
+In spring security, All URLs are protected
+A login form is shown for unauthorized requests
+CSRF disable
+Frames - Spring does not allow frames
