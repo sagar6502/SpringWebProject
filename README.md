@@ -19,3 +19,10 @@ How does HelloWorldBean Object get converted to JSON?
 How are all jars available(Spring, Spring MVC, Jackson, Tomcat)
 Starter projects - Spring Boot Starter Web (Spring-webmvc, spring-web, spring-boot-starter tomcat, spring-boot-starter-json)
 
+Request Methods for REST API
+GET - Retrieve Details of a resource
+POST - Create a new resource
+PUT - Update an existing resource
+PATCH - Update part of a resource
+DELETE - Delete a resource
+
