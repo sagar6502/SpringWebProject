@@ -5,3 +5,17 @@ A RESTful API is an architectural style for an application program interface (AP
 Create Spring project with Dev-tools, JPA-h2, and Web for dependencies. 
 Spring boot version 3.2.1
 
+Instead of requestMapping, getMapping, postMapping also can be used.
+
+How requests are handled?
+	DispatcherServlet - Front Controller Pattern [In log: Mapping servlets]
+	Auto-Configuration(dispatacherServletAutoConfiguration)
+
+How does HelloWorldBean Object get converted to JSON?
+	@ResponseBody + JacksonHttpMessageConverters
+	Auto Configuration (JacksonHttpMessageConvertersConfiguration)
+
+
+How are all jars available(Spring, Spring MVC, Jackson, Tomcat)
+Starter projects - Spring Boot Starter Web (Spring-webmvc, spring-web, spring-boot-starter tomcat, spring-boot-starter-json)
+
