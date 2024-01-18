@@ -26,5 +26,7 @@ PUT - Update an existing resource
 PATCH - Update part of a resource
 DELETE - Delete a resource
 
+To trigger post request, we need REST_API client to trigger it. Hence, we make use of "Talend API Tester - Free Edition" chrome extension.
+
 
 
