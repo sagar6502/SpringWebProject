@@ -33,7 +33,9 @@ http://localhost:8080/swagger-ui.html - Swagger UI
 http://localhost:8080/v3/api-docs - OpenAPI docs
 
 Internationalization implemented using messages.properties.
-For Getting the values a/c to messages properties defined, use accpet-language header and pass the _* properties defined.
+For Getting the values a/c to messages properties defined, use accept-language header and pass the _* properties defined.
+
+
 
 
 
