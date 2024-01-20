@@ -28,5 +28,7 @@ DELETE - Delete a resource
 
 To trigger post request, we need REST_API client to trigger it. Hence, we make use of "Talend API Tester - Free Edition" chrome extension.
 
-
+To open :
+http://localhost:8080/swagger-ui.html - Swagger UI
+http://localhost:8080/v3/api-docs
 
