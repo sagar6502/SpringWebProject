@@ -17,7 +17,7 @@ public class Post {
 	
 	private String description;
 	
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JsonIgnore
 	private User user;
 
@@ -46,6 +46,14 @@ public class Post {
 		super();
 		this.id = id;
 		this.description = description;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
 	}
 	
 }
