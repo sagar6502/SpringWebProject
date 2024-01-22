@@ -40,5 +40,13 @@ HATEOAS stands for Hypermedia as the Engine of Application State and it is a com
 
 HALExplorer - Just use localhost:8080(URI)
 
+How Spring Security Works :
+ Filter Chains
+ 1. All requests should be authenticated
+ 2. If a request is not authenticated, a web page is shown
+ 3. CSRF -> POST, PUT
+ 
+ Spring Configuration file for filter chain
+
 
 
