@@ -1,4 +1,5 @@
 # SpringWebProject
+
 @SessionAttributes is used to store model attributes in the HTTP Servlet session between requests. It is a type-level annotation that declares the session attributes used by a specific controller. This typically lists the names of model attributes or types of model attributes that should be transparently stored in the session for subsequent requests to access.
 
 
@@ -56,3 +57,10 @@ download docker from "install docker" web page from docker
 check version of docker using : "docker --version"
 Use system administer to run docker[prefer powershell]
 docker run --detach --env MYSQL_ROOT_PASSWORD=dummypassword --env MYSQL_USER=todos-user --env MYSQL_PASSWORD=dummytodos --env MYSQL_DATABASE=todos --name mysql --publish 3306:3306 mysql:8-oracle
+
+
+Hey everyone, this is my spring framework learning Repo. The project code does not exists in main branch. Please visit any other feature branch for purpose specific code.
+Thanks,
+Happy Learning,
+Sagar Sunar
+
